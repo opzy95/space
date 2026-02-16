@@ -52,12 +52,19 @@ padding: 10px;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #24047e;
+    background-color: #fff;
+    opacity: 0.5;
     margin-left: 50px;
     margin-bottom: 30px;
 }
-.dot.active{
-    background-color: white;
+.dot:hover{
+    /* background-color: white; */
+    opacity: 1;
+}
+
+.active{
+    opacity: 1;
+
 }
 span{
     color: grey;

@@ -8,6 +8,22 @@ const descEl = document.getElementById("desc");
 const distanceEl = document.getElementById("distance");
 const timeEl = document.getElementById("time");
 
+
+const navMenus = document.querySelectorAll('.menu');
+navMenus.forEach(navMenu => {
+navMenu.addEventListener('click', () =>{
+  navMenu.classList.add('active')
+})
+navMenus.forEach(navMenu => {
+  navMenu.addEventListener('click', () => 
+  {
+    navMenu.classList.remove('active')
+  })
+})
+})
+console.log(navMenus);
+
+
 async function fetchData() {
   try {
     const response = await fetch("/starter-code/data.json");

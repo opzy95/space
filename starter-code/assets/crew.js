@@ -8,6 +8,22 @@ const bioEl = document.getElementById('bio');
 const crewImageEl = document.getElementById('crewImage');
 
 
+const navDots = document.querySelectorAll('.dot');
+navDots.forEach(navDot => {
+    navDot.addEventListener('click', () =>{
+        navDot.classList.add('active')
+    });
+    navDots.forEach(navDot => {
+        navDot.addEventListener('click', () => {
+            navDot.classList.remove('active')
+
+        })
+    })
+})
+console.log(navDots);
+
+
+
 async function fetchData() {
   try {
     const response = await fetch("/starter-code/data.json");
@@ -21,7 +37,7 @@ async function fetchData() {
     let crew4Data = crewData[3];
     console.log(crew4Data);
 
-    
+
      titleEl.textContent = crew1Data.role;
         nameEl.textContent = crew1Data.name; 
         bioEl.textContent = crew1Data.bio;
@@ -54,6 +70,9 @@ async function fetchData() {
         bioEl.textContent = crew4Data.bio;
         crewImageEl.src = crew4Data.images.png;
       })
+
+
+
 
 
 

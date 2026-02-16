@@ -7,6 +7,22 @@ const descriptionEl = document.getElementById('description');
 const techImageEl = document.getElementById('techImage');
 
 
+const navMenus = document.querySelectorAll('.menu');
+
+navMenus.forEach(navMenu => {
+navMenu.addEventListener('click', () =>{
+  navMenu.classList.add('active')
+})
+navMenus.forEach(navMenu => {
+  navMenu.addEventListener('click', () => 
+  {
+    navMenu.classList.remove('active')
+  })
+})
+})
+console.log(navMenus);
+
+
 async function fetchData() {
   try {
     const response = await fetch("/starter-code/data.json");

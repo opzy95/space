@@ -38,6 +38,9 @@ padding: 10px;
     border-bottom: 7px solid grey;
     padding: 8px;
 }
+.active{
+    border-bottom: 7px solid grey;
+}
 
 .navbar a{
     text-decoration: none;
@@ -52,6 +55,13 @@ ul{
     gap: 20px;
     /* padding: 30px; */
     list-style-type: none;
+}
+ul li:hover{
+    border-bottom: 5px solid grey;
+    /* padding: 3px; */
+}
+ul li:active{
+    border-bottom: 5px solid grey;
 }
 h3{
     font-size: 70px;
