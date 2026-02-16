@@ -44,51 +44,47 @@ padding: 10px;
     color: white;
 }
 
-#planetImage{
-    width: 300px;
-}
-ul{
+.dots{
     display: flex;
-    gap: 20px;
-    /* padding: 30px; */
-    list-style-type: none;
+    /* gap: 2px; */
 }
-h3{
-    font-size: 70px;
-    margin-top: 40px;
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #24047e;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
-#desc{
-    width: 36rem;
-    margin-bottom: 20px;
-    line-height: 25px;
-    font-size: 20px;
-}
-.average{
-    display: flex;
-    gap: 50px;
-}
-
-.line{
-    width: 570px;
-    margin-bottom: 20px;
+.dot.active{
+    background-color: white;
 }
 span{
     color: grey;
     margin-right: 5px;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 150px;
-}
-.dest{
-    margin-top: 40px;
+.cre{
     margin-left: 40px;
+    margin-top: 30px;
+}
+h3{
+    font-size: 22px;
+    color: grey;
+}
+h1{
+    font-size: 70px;
 }
 p{
-    font-size: 30px;
+    width: 30rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    line-height: 25px;
 }
-.ave{
-    font-size: 17px;
+.all{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+.info{
+    margin-top: 290px;
 }

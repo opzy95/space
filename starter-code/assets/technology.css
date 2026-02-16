@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-image: url(/starter-code/assets/home/background-home-desktop.jpg);
+background-size: cover;
+background-position: center;
+color: white;
+}
+
+
+.line{
+    width: 600px;
+    align-items: center;
+    margin-left: 7px;
+    margin-top: 15px;
+}
+.navbar{
+    display: flex;
+    padding: 20px;
+    gap: 5px;
+    justify-content: center;
+}
+.navbar li{
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.hhh{
+background-color: rgba(240, 248, 255, 0.36);
+display: flex;
+padding: 10px;
+}
+
+.hhh a:hover{
+    border-bottom: 7px solid grey;
+    padding: 8px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.num{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.number-one{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 7px;
+}
+.number-two{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 7px;
+}
+.number-three{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 7px;
+}
+span{
+    color: grey;
+    margin-right: 5px;
+}
+
+.cre{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+h4{
+    color: grey;
+}
+p{
+    width: 30rem;
+    line-height: 25px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 130px;
+}
+
+#name{
+    padding: 15px;
+    /* margin-top: 10px; */
+}
