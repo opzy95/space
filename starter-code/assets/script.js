@@ -15,7 +15,7 @@ navMenu.addEventListener('click', () =>{
   navMenus.forEach(navMenu => {
   navMenu.classList.remove('active')
 });
-navMenu.classList.add('active')
+navMenu.classList.add  ('active')
 })
 })
 console.log(navMenus);
