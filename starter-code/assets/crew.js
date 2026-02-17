@@ -9,17 +9,22 @@ const crewImageEl = document.getElementById('crewImage');
 
 
 const navDots = document.querySelectorAll('.dot');
-navDots.forEach(navDot => {
+navDots.forEach((navDot) => {
     navDot.addEventListener('click', () =>{
-        navDot.classList.add('active')
+      navDots.forEach(navDot => {
+        navDot.classList.remove('active')
+      });
+      navDot.classList.add('active');
     });
-    navDots.forEach(navDot => {
-        navDot.addEventListener('click', () => {
-            navDot.classList.remove('active')
 
-        })
-    })
+
+   
 })
+
+
+
+
+
 console.log(navDots);
 
 

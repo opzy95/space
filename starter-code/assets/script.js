@@ -12,13 +12,10 @@ const timeEl = document.getElementById("time");
 const navMenus = document.querySelectorAll('.menu');
 navMenus.forEach(navMenu => {
 navMenu.addEventListener('click', () =>{
-  navMenu.classList.add('active')
-})
-navMenus.forEach(navMenu => {
-  navMenu.addEventListener('click', () => 
-  {
-    navMenu.classList.remove('active')
-  })
+  navMenus.forEach(navMenu => {
+  navMenu.classList.remove('active')
+});
+navMenu.classList.add('active')
 })
 })
 console.log(navMenus);
